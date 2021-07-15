@@ -16,7 +16,7 @@ Some questions that we are particularly interested in exploring are:
 -	Do geographical regions play a part in increased medical costs?
 
 A useful outcome of this project could be to explore the results of controllable variables in reducing the total medical costs. For instance, not smoking and reducing one’s BMI may reduce the annual medical costs. In today’s world, the medical costs are quite high so any action we could take to reduce them would be incredibly helpful.
-
+I believe we could try to make a user-facing dashboard since they make it easier for users to read and understand the data.
   
 
 ## Describe your dataset in about 150-200 words
@@ -25,7 +25,7 @@ A useful outcome of this project could be to explore the results of controllable
 
 Tha dataset provides the annual medical expenses of several individuals relying on US based insurance companies to pay for their medical expenses in the US.  Furthermore, the individuals are also categorized based of their residential area in the US, as well as gender, BMI, children covered under same and, and even if they are categorized as smokers or non-smokers. Also, the individuals age has been recorded as an ordinal data type.  The dataset consists of about 1339 enteries, with all of the enteries or variables reported for each individual. Additionally, it seems that the dataset contains similar number of enteries for all age groups reported, and also that the male to female ratio is 51:49 in the dataset, which is pretty accurate in representing the normal population of the US. It was also made sure that almost equal number of measurements were taken from all the four categorized regions of US. This helps to ensure that the data is not biased of any certain categorial variable. Thus, it is possible for us to conduct test to prove if any certain categorial variables show signs of having high medical expenses. 
 
-There was no information found on which company collected the dataset , although it was found that the dataset was created/uploaded on it [online source](https://www.kaggle.com/mirichoi0218/insurance/home) 3 years ago. The dataset was made public , for possible educational purposes, and has been registered under [Open Data Commons](https://opendatacommons.org/licenses/dbcl/1-0/). Moreover, no information was found regarding whether the data was collected by a machine or a person.
+There was no information found on which company collected the dataset , although it was found that the dataset was created/uploaded on an [online source](https://www.kaggle.com/mirichoi0218/insurance/home) 3 years ago. The dataset was made public for possible educational purposes, and has been registered under [Open Data Commons](https://opendatacommons.org/licenses/dbcl/1-0/). Moreover, no information was found regarding whether the data was collected by a machine or a person.
 
 ## Team Members
 
