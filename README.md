@@ -23,7 +23,7 @@ There was no information found on which company collected the dataset , although
 ## Team Members
 
 - Person 1: Prabhmeet Deol : A third year Computer Science student.
-- Person 2: one sentence about you!
+- Person 2: Ishita Gupta: A third year Computer Science student.
 
 ## References
 
