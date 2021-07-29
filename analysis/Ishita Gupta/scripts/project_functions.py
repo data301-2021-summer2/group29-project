@@ -12,7 +12,7 @@ def load_and_process(dataSet):
     df2 = (
         df1
         .rename(columns={'bmi':'BMI','smoker':'Smoker','region':'Region','charges':'MedicalCosts_USD'})
-        .assign(Smoker_bin=lambda x: np.where((df['smoker']) == 'yes', 1, 0))
+        .assign(Smoker_bin=lambda x: np.where((dataSet['Smoker']) == 'yes', 1, 0))
         .round({'BMI':2, 'MedicalCosts_USD':3})
     )
     
