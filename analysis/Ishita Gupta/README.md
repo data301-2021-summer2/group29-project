@@ -1,0 +1,3 @@
+- All my data analysis for Milestone 2 is in the Milestone2.ipynb file.
+- The ImportFunctions.ipynb file is a notebook to import the functions I made.
+- The scripts directory contains the project_functions.py file which contains all the functions I make. Currently, it only has the `load_and_process()` function.
