@@ -3,26 +3,31 @@ import numpy as np
 import matplotlib as plt
 import seaborn as sns
 
-def load_process_Medical_Data(dataSet):
+def load_process_Medical_Data(data):
 	## This will load up , and clean up the data.
+	"""
+	Feed this function the Medical dataset from 
+	"""
 	dataSet = (
-		pd.read_csv('./../../data/processed/Processed_Medical_Data.csv')
-	 	.loc[:,['age','bmi','charges']]
+		pd.read_csv(data)
+	 	.loc[:,['bmi','charges']]
 	 	.rename(columns={'charges':"Charges_USD"})
 	 	.round({'bmi': 2, 'Charges_USD': 1})
+		.astype({'bmi':float})
 		)
-
+	## This will update the dataset in my directory.
+	dataSet.to_csv('./data/Medical_Cost.csv')
 	## Adding more informative columns to our data Set.
-	def categorizeBmi(bmiSet):
-		bmi = bmiSet['bmi']
-		if bmi <18.5:
+	def categorizeBmi(row):
+		bmi = float(row['bmi'])
+		if bmi < 18.59:
 			return "Underweight"
-		elif bmi < 24.9:
+		elif bmi < 25.0:
 			return "Normal"
-		elif bmi <29.9:
+		elif bmi <29.99:
 			return "Overweight"
-		elif bmi > 30.0:
-			return "Obese"	
+		elif bmi >= 30.0:
+			return "Obese"
 	## This adds an additional columns using the above function to our dataSet.
 	dataSet['BMI_Category'] = dataSet.apply(categorizeBmi,axis='columns')
 
@@ -30,8 +35,5 @@ def load_process_Medical_Data(dataSet):
 	dataSet.describe().round(2).loc["mean":"max"].T
 
 	##
-
-
-
 
 	return dataSet
