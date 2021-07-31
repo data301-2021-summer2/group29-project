@@ -15,8 +15,6 @@ def load_process_Medical_Data(data):
 	 	.round({'bmi': 2, 'Charges_USD': 1})
 		.astype({'bmi':float})
 		)
-	## This will update the dataset in my directory.
-	dataSet.to_csv('./data/Medical_Cost.csv')
 	## Adding more informative columns to our data Set.
 	def categorizeBmi(row):
 		bmi = float(row['bmi'])
@@ -37,5 +35,4 @@ def load_process_Medical_Data(data):
 	##
 
 	return dataSet
-
 

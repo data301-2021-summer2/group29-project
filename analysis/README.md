@@ -8,4 +8,4 @@
 		2. 2 Different types of plots.
 		3. 2 Exploratory Plots.
 	5. Further analysis was also conducted to answer the included research questions.
-	
+
