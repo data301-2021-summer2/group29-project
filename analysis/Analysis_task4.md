@@ -13,7 +13,7 @@ A scatterplot of Medical charges by regions in the USA showed that there is not 
 
 The plots can be found below:
 
-![Region Plots](images/region.jpeg)
+![Region Plots](../images/region.jpeg)
 
 *Note:* 
 - All of the data and code used to create these plots can be found in my analysis folder (Ishita Gupta).
