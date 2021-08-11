@@ -5,7 +5,8 @@
 -  **July 14** - Updated Readme for the dataset, and downloaded data into the repository.
 -  **July 15** - Updated Readme for task 3 and edited some spelling and grammatical errors.
 
-
+Final Analysis for Milestone 2 can be found [here](https://github.com/data301-2021-summer2/group29-project/blob/main/analysis/Analysis_task4.md).
+Individual EDA's for Milestone 2 can be found [here](https://github.com/data301-2021-summer2/group29-project/blob/main/analysis/Ishita%20Gupta/Milestone2.ipynb) and [here](https://github.com/data301-2021-summer2/group29-project/blob/main/analysis/Prabhmeet%20Deol/DataAnalysis.ipynb).
 
 
 ## Describe your topic/interest in about 150-200 words
@@ -35,4 +36,3 @@ There was no information found on which company collected the dataset , although
 ## References
 
 -  https://www.kaggle.com/mirichoi0218/insurance/home (accessed July 14, 2021)
--  
