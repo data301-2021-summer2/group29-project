@@ -7,7 +7,7 @@ def load_and_process(dataSet):
     ## This will load up , and clean up the data.
     
     df_processed = (
-        pd.read_csv('/Users/ISHITA GUPTA/Documents/COSC301/group29-project/data/raw/Medical_Cost.csv')
+        pd.read_csv('./../data/raw/Medical_Cost.csv')
         .loc[:,['bmi','smoker','region','charges']]
         .rename(columns={'bmi':'BMI','smoker':'Smoker','region':'Region','charges':'MedicalCosts_USD'})
         .assign(Smoker_bin=lambda x: np.where((x['Smoker']) == 'yes', 1, 0))
@@ -31,4 +31,3 @@ def load_and_process(dataSet):
     df_processed.drop_duplicates(inplace=True)
 
     return df_processed
-
