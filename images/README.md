@@ -1,1 +1,1 @@
-This folder is where I add the images that I used for my final analysis of the dataset. -Ishita
+This folder is where we add the images that we used for our final analysis of the dataset. 
