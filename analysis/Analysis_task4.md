@@ -1,4 +1,44 @@
-# Prabhmeet's Analysis:
+# This is the file where we conduct our final analysis - Task 4
+
+## Ishita's Analysis:
+*My Research questions:*
+- Does the geographical location play a part in increased medical costs?
+- Is there a relationship or correlation between being a smoker and having higher medical costs?
+
+I used a lot of plots and graphs to visualize my dataset to help answer my research questions.
+
+When I created a correlation matrix, I observed that the pearson correlation coefficient, which is a measure of the linear association between two variables, had a very high value of 0.79 between the \"Medical Costs\" and the \"Smoker\" variable. This indicates that there is a positive linear correlation between the variables.
+
+A scatterplot of Medical charges by regions in the USA showed that there is not a significant difference in the medical charges amongst the different regions. To further explore this relationship, I created a boxplot and a violinplot. Both of these plots also suggested that there was no notable difference in the medical charges. However, both of these plots demonstrated that the 'southeast' region had higher medical costs, while 'southwest' seemed to have the least costs.
+
+The plots can be found below:
+
+![Region Plots](images/region.jpeg)
+
+*Note:* 
+- All of the data and code used to create these plots can be found in my analysis folder (Ishita Gupta).
+- If the above image is not visible on GitHub, it can be viewed by going to images/region.jpeg
+
+Next, I analyzed the relationship between the 'Smoker' variable and the 'Medical Charges' variable.
+
+I started by creating a boxplot of medical charges by whether the person is a smoker or not. This boxplot displayed immense evidence that a smoker has higher medical costs on average. The minimum value of the medical costs of a smoker also appears to be higher than the value of the upper quartile of a non-smoker.
+
+I also created two barplots displaying the medical charges by 'region' and 'smoker'. This was to combine both my research questions and visualize the data together. Both of the barplots confirmed the previous observations that there was not much evidence to say that a particular region had much higher medical costs and that it was very evident that a smoker had to incur more medical charges in the United States.
+
+These plots can be found below:
+
+![Smoker and Region Plots](../images/smoker.jpeg)
+
+*Note:* If the above image is not visible on GitHub, it can be viewed by going to images/smoker.jpeg
+
+### Conclusion:
+
+Upon analyzing and visualizing the data, we can reach the following conclusions:
+
+- There does not appear to be a causal relationsip or a correlation amongst the different regions in the United States and the medical charges people incur in those areas. However, it is apparent that the 'southeast' region has a higher medical cost. This could be explored by experts, who could conduct research and collect more data to better understand this relationship.
+- There appears to be a strong correlation among whether the person is a smoker and their medical charges. However, when the data was analyzed, it was found that the number of non-smokers in the dataset were far greater than the number of smokers. This difference in the count could also be a factor in this vast difference in the medical costs.
+
+## Prabhmeet's Analysis:
 First we will import pandas, and use it to read the dataset. As well as do some method cleaning, and some data Wrangling. All of that has been Chained together, in this chunk , below for the purpose of ease to read , and debug.
 
 Also a function was built , that used method chanining to clean , process, and wrangle the data, and act as a pipeline. In this section we use that function to load in our data. The function was placed inside the scripts folder 
