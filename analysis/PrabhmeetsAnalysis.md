@@ -3,7 +3,7 @@ First we will import pandas, and use it to read the dataset. As well as do some 
 
 Also a function was built , that used method chanining to clean , process, and wrangle the data, and act as a pipeline. In this section we use that function to load in our data. The function was placed inside the scripts folder 
 
-```
+```python
 import pandas as pd
 from pandas_profiling import ProfileReport as pf
 import numpy as np
@@ -19,7 +19,7 @@ The autoreload extension is already loaded. To reload it, use:
 ```
 Now we will use a pandas profiling library to get a brief overiview of our data , and look over some of the plots of our dataset.
 
-```
+```python
 pf(dataSet).to_notebook_iframe()
 ```
 Followowing changes were made after reading, and exploring the Profile report.
@@ -53,7 +53,7 @@ dataSet.groupby('BMI_Category').agg(['mean','std','median','min','max']).round(1
 The following code was used to explore the percentage of US Population that is under the Obese Category. During my Exploratory analysis i got an intuition, that a good amount of American citizens have higher BMI than normal , that is they have BMI more the an 24.9 which is considered unhealthy.
 
  - From the plots below , it can be concluded that more than 50 percentil of the US population can be categorized as having , an unhealthy BMI. 
-```
+```python
 fig, ax =plt.subplots(1,2,figsize=(15,5))
 sns.countplot(dataSet['BMI_Category'],ax=ax[0]).set(
 	xlabel = "BMI Category",
@@ -72,7 +72,7 @@ sns.kdeplot(
 ![Plot1](Prabhmeets_images/plot1.png)
 
 The following code will help us explore the relationship between BMI Category, and Medical Charges.
-```
+```python
 fig, ax =plt.subplots(2,2,figsize=(15,10))
 
 boxplot = sns.boxplot(
@@ -135,7 +135,7 @@ fig.show()
 ```
 ![Plot2](Prabhmeets_images/plot2.png)
 
-```
+```python
 fig, ax =plt.subplots(1,2,figsize=(15,5))
 scatter1=sns.scatterplot(
 	data=dataSet,
