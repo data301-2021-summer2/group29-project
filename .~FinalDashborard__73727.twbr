@@ -1,0 +1,1032 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20212.21.0712.0907                               -->
+<workbook source-build='2021.2.1 (20212.21.0712.0907)' source-platform='mac' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <Heatmap />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <SortTagCleanup />
+    <WindowsPersistSimpleIdentifiers />
+    <ZoneBackgroundTransparency />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <_.fcp.AnimationOnByDefault.false...style>
+    <_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule element='animation'>
+      <_.fcp.AnimationOnByDefault.false...format attr='animation-on' value='ao-on' />
+    </_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule>
+  </_.fcp.AnimationOnByDefault.false...style>
+  <datasources>
+    <datasource caption='Processed_Data' inline='true' name='federated.1o942c30tei52i1gjoirs0kswial' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='Processed_Data' name='textscan.1rkp4vk1tc2z7z1dt1rz80ibag5b'>
+            <connection class='textclean' cleaning='yes' compat='no' csvFile='Data/processed/Processed_Data.csv' dataRefreshTime='' directory='Data/processed' filename='/var/folders/jt/jcld5y9j7ts25thstt0m54kr0000gn/T/tableau-temp/0sr6mrf0gk91671gsoxh506qlthl/Processed_Data.csv.xlsx' interpretationMode='8' password='' server='' validate='no' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.1rkp4vk1tc2z7z1dt1rz80ibag5b' name='Processed_Data.csv' table='[Processed_Data#csv$]' type='table'>
+          <columns character-set='UTF-8' gridOrigin='A1:G1338:no:A1:G1338:1' header='yes' locale='en_US' separator=','>
+            <column datatype='integer' name='F1' ordinal='0' />
+            <column datatype='real' name='BMI' ordinal='1' />
+            <column datatype='string' name='Smoker' ordinal='2' />
+            <column datatype='string' name='Region' ordinal='3' />
+            <column datatype='real' name='MedicalCosts_USD' ordinal='4' />
+            <column datatype='integer' name='Smoker_bin' ordinal='5' />
+            <column datatype='string' name='BMI_Category' ordinal='6' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.1rkp4vk1tc2z7z1dt1rz80ibag5b' name='Processed_Data.csv' table='[Processed_Data#csv$]' type='table'>
+          <columns character-set='UTF-8' gridOrigin='A1:G1338:no:A1:G1338:1' header='yes' locale='en_US' separator=','>
+            <column datatype='integer' name='F1' ordinal='0' />
+            <column datatype='real' name='BMI' ordinal='1' />
+            <column datatype='string' name='Smoker' ordinal='2' />
+            <column datatype='string' name='Region' ordinal='3' />
+            <column datatype='real' name='MedicalCosts_USD' ordinal='4' />
+            <column datatype='integer' name='Smoker_bin' ordinal='5' />
+            <column datatype='string' name='BMI_Category' ordinal='6' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Processed_Data.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:G1338:no:A1:G1338:1&quot;</attribute>
+              <attribute datatype='integer' name='lost'>0</attribute>
+              <attribute datatype='integer' name='outcome'>1</attribute>
+              <attribute datatype='integer' name='processed'>5348</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F1</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[F1]</local-name>
+            <parent-name>[Processed_Data.csv]</parent-name>
+            <remote-alias>F1</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Processed_Data.csv_D17CA24E4D2944DCA33E3C8405E14F53]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>BMI</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[BMI]</local-name>
+            <parent-name>[Processed_Data.csv]</parent-name>
+            <remote-alias>BMI</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Processed_Data.csv_D17CA24E4D2944DCA33E3C8405E14F53]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Smoker</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Smoker]</local-name>
+            <parent-name>[Processed_Data.csv]</parent-name>
+            <remote-alias>Smoker</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RCA_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Processed_Data.csv_D17CA24E4D2944DCA33E3C8405E14F53]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Region</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Region]</local-name>
+            <parent-name>[Processed_Data.csv]</parent-name>
+            <remote-alias>Region</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RCA_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Processed_Data.csv_D17CA24E4D2944DCA33E3C8405E14F53]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>MedicalCosts_USD</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[MedicalCosts_USD]</local-name>
+            <parent-name>[Processed_Data.csv]</parent-name>
+            <remote-alias>MedicalCosts_USD</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Processed_Data.csv_D17CA24E4D2944DCA33E3C8405E14F53]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Smoker_bin</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Smoker_bin]</local-name>
+            <parent-name>[Processed_Data.csv]</parent-name>
+            <remote-alias>Smoker_bin</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Processed_Data.csv_D17CA24E4D2944DCA33E3C8405E14F53]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>BMI_Category</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[BMI_Category]</local-name>
+            <parent-name>[Processed_Data.csv]</parent-name>
+            <remote-alias>BMI_Category</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RCA_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Processed_Data.csv_D17CA24E4D2944DCA33E3C8405E14F53]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='BMI Category' datatype='string' name='[BMI_Category]' role='dimension' type='nominal' />
+      <column caption='MedicalCosts USD' datatype='real' name='[MedicalCosts_USD]' role='measure' type='quantitative' />
+      <column caption='Smoker bin' datatype='integer' name='[Smoker_bin]' role='measure' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='Processed_Data.csv' datatype='table' name='[__tableau_internal_object_id__].[Processed_Data.csv_D17CA24E4D2944DCA33E3C8405E14F53]' role='measure' type='quantitative' />
+      <column-instance column='[BMI_Category]' derivation='None' name='[none:BMI_Category:nk]' pivot='key' type='nominal' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:BMI_Category:nk]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;Normal&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;Underweight&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Overweight&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Obese&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Canada&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='Processed_Data.csv' id='Processed_Data.csv_D17CA24E4D2944DCA33E3C8405E14F53'>
+            <properties context=''>
+              <relation connection='textscan.1rkp4vk1tc2z7z1dt1rz80ibag5b' name='Processed_Data.csv' table='[Processed_Data#csv$]' type='table'>
+                <columns character-set='UTF-8' gridOrigin='A1:G1338:no:A1:G1338:1' header='yes' locale='en_US' separator=','>
+                  <column datatype='integer' name='F1' ordinal='0' />
+                  <column datatype='real' name='BMI' ordinal='1' />
+                  <column datatype='string' name='Smoker' ordinal='2' />
+                  <column datatype='string' name='Region' ordinal='3' />
+                  <column datatype='real' name='MedicalCosts_USD' ordinal='4' />
+                  <column datatype='integer' name='Smoker_bin' ordinal='5' />
+                  <column datatype='string' name='BMI_Category' ordinal='6' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <shared-views>
+    <shared-view name='federated.1o942c30tei52i1gjoirs0kswial'>
+      <datasources>
+        <datasource caption='Processed_Data' name='federated.1o942c30tei52i1gjoirs0kswial' />
+      </datasources>
+      <datasource-dependencies datasource='federated.1o942c30tei52i1gjoirs0kswial'>
+        <column datatype='real' name='[BMI]' role='measure' type='quantitative' />
+        <column-instance column='[BMI]' derivation='None' name='[none:BMI:qk]' pivot='key' type='quantitative' />
+      </datasource-dependencies>
+      <filter class='quantitative' column='[federated.1o942c30tei52i1gjoirs0kswial].[none:BMI:qk]' included-values='in-range'>
+        <min>15.960000000000001</min>
+        <max>48.100000000000001</max>
+      </filter>
+    </shared-view>
+  </shared-views>
+  <actions>
+    <action caption='Filter 1 (generated)' name='[Action1_9C87F5CE8DC2456284C2990DED435399]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='Dashboard 1' type='sheet' worksheet='Boxplot' />
+      <command command='tsc:tsl-filter'>
+        <param name='special-fields' value='all' />
+        <param name='target' value='Dashboard 1' />
+      </command>
+    </action>
+  </actions>
+  <worksheets>
+    <worksheet name='Barplot'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontsize='12'>Barplots showing average Medical Spending per BMI group.</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Processed_Data' name='federated.1o942c30tei52i1gjoirs0kswial' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1o942c30tei52i1gjoirs0kswial'>
+            <column datatype='real' name='[BMI]' role='measure' type='quantitative' />
+            <column caption='BMI Category' datatype='string' name='[BMI_Category]' role='dimension' type='nominal' />
+            <column datatype='integer' name='[F1]' role='measure' type='quantitative' />
+            <column caption='MedicalCosts USD' datatype='real' name='[MedicalCosts_USD]' role='measure' type='quantitative' />
+            <column-instance column='[MedicalCosts_USD]' derivation='Avg' name='[avg:MedicalCosts_USD:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[F1]' derivation='Count' name='[cnt:F1:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[BMI]' derivation='None' name='[none:BMI:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[BMI_Category]' derivation='None' name='[none:BMI_Category:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <manual-sort column='[federated.1o942c30tei52i1gjoirs0kswial].[none:BMI_Category:nk]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;Underweight&quot;</bucket>
+              <bucket>&quot;Normal&quot;</bucket>
+              <bucket>&quot;Overweight&quot;</bucket>
+              <bucket>&quot;Obese&quot;</bucket>
+            </dictionary>
+          </manual-sort>
+          <slices>
+            <column>[federated.1o942c30tei52i1gjoirs0kswial].[none:BMI:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.1o942c30tei52i1gjoirs0kswial].[avg:MedicalCosts_USD:qk]' scope='rows' value='Mean Medical Spending (USD)' />
+            <encoding attr='space' class='0' field='[federated.1o942c30tei52i1gjoirs0kswial].[cnt:F1:qk]' field-type='quantitative' fold='true' scope='rows' type='space' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='width' field='[federated.1o942c30tei52i1gjoirs0kswial].[none:BMI_Category:nk]' value='223' />
+          </style-rule>
+          <style-rule element='refline'>
+            <format attr='fill-above' id='refline0' value='#00000000' />
+            <format attr='fill-below' id='refline0' value='#00000000' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[federated.1o942c30tei52i1gjoirs0kswial].[none:BMI_Category:nk]' />
+              <color column='[federated.1o942c30tei52i1gjoirs0kswial].[:Measure Names]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.1o942c30tei52i1gjoirs0kswial].[avg:MedicalCosts_USD:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[federated.1o942c30tei52i1gjoirs0kswial].[none:BMI_Category:nk]' />
+              <color column='[federated.1o942c30tei52i1gjoirs0kswial].[:Measure Names]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.1o942c30tei52i1gjoirs0kswial].[cnt:F1:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[federated.1o942c30tei52i1gjoirs0kswial].[none:BMI_Category:nk]' />
+              <color column='[federated.1o942c30tei52i1gjoirs0kswial].[:Measure Names]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([federated.1o942c30tei52i1gjoirs0kswial].[avg:MedicalCosts_USD:qk] + [federated.1o942c30tei52i1gjoirs0kswial].[cnt:F1:qk])</rows>
+        <cols>[federated.1o942c30tei52i1gjoirs0kswial].[none:BMI_Category:nk]</cols>
+      </table>
+      <simple-id uuid='{39D51929-8FFA-4DB9-9896-A6315687D5A1}' />
+    </worksheet>
+    <worksheet name='Boxplot'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontsize='12'>Boxplot Showing Mean Medical Expenses.</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Processed_Data' name='federated.1o942c30tei52i1gjoirs0kswial' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1o942c30tei52i1gjoirs0kswial'>
+            <column datatype='real' name='[BMI]' role='measure' type='quantitative' />
+            <column caption='BMI Category' datatype='string' name='[BMI_Category]' role='dimension' type='nominal' />
+            <column caption='MedicalCosts USD' datatype='real' name='[MedicalCosts_USD]' role='measure' type='quantitative' />
+            <column-instance column='[MedicalCosts_USD]' derivation='Avg' name='[avg:MedicalCosts_USD:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[BMI]' derivation='None' name='[none:BMI:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[BMI_Category]' derivation='None' name='[none:BMI_Category:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <manual-sort column='[federated.1o942c30tei52i1gjoirs0kswial].[none:BMI_Category:nk]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;Underweight&quot;</bucket>
+              <bucket>&quot;Normal&quot;</bucket>
+              <bucket>&quot;Overweight&quot;</bucket>
+              <bucket>&quot;Obese&quot;</bucket>
+            </dictionary>
+          </manual-sort>
+          <slices>
+            <column>[federated.1o942c30tei52i1gjoirs0kswial].[none:BMI:qk]</column>
+          </slices>
+          <aggregation value='false' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='1' field='[federated.1o942c30tei52i1gjoirs0kswial].[avg:MedicalCosts_USD:qk]' field-type='quantitative' fold='true' scope='rows' type='space' />
+            <format attr='title' class='0' field='[federated.1o942c30tei52i1gjoirs0kswial].[avg:MedicalCosts_USD:qk]' scope='rows' value='Annual Medical Spending (USD)' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='width' field='[federated.1o942c30tei52i1gjoirs0kswial].[none:BMI_Category:nk]' value='203' />
+          </style-rule>
+          <style-rule element='refboxplot'>
+            <format attr='fill-color' id='refline0' value='#f0f0f0d9' />
+            <format attr='palette' id='refline0' value='bp_green' />
+            <format attr='opacity' id='refline0' value='244' />
+            <format attr='boxplot-style' id='refline0' value='modern' />
+            <format attr='fill-color' id='refline1' value='#f0f0f0d9' />
+            <format attr='palette' id='refline1' value='bp_green' />
+            <format attr='opacity' id='refline1' value='244' />
+            <format attr='boxplot-style' id='refline1' value='modern' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <reference-line axis-column='[federated.1o942c30tei52i1gjoirs0kswial].[avg:MedicalCosts_USD:qk]' boxplot-mark-exclusion='false' boxplot-whisker-type='standard' enable-instant-analytics='true' formula='average' id='refline0' label-type='automatic' probability='95' scope='per-cell' symmetric='false' value-column='[federated.1o942c30tei52i1gjoirs0kswial].[avg:MedicalCosts_USD:qk]' z-order='1' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='0.11994475126266479' />
+                <format attr='shape' value=':filled/circle' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.1o942c30tei52i1gjoirs0kswial].[avg:MedicalCosts_USD:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.1o942c30tei52i1gjoirs0kswial].[none:BMI_Category:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='0.11994475126266479' />
+                <format attr='shape' value=':filled/circle' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.1o942c30tei52i1gjoirs0kswial].[avg:MedicalCosts_USD:qk]' y-index='1'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Heatmap' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <lod column='[federated.1o942c30tei52i1gjoirs0kswial].[none:BMI_Category:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='0.11994475126266479' />
+                <format attr='shape' value=':filled/circle' />
+                <format attr='density-intensity' value='0.086760520935058594' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([federated.1o942c30tei52i1gjoirs0kswial].[avg:MedicalCosts_USD:qk] + [federated.1o942c30tei52i1gjoirs0kswial].[avg:MedicalCosts_USD:qk])</rows>
+        <cols>[federated.1o942c30tei52i1gjoirs0kswial].[none:BMI_Category:nk]</cols>
+      </table>
+      <simple-id uuid='{C1EF9F86-C87C-4642-ACCF-35DDC3D1E105}' />
+    </worksheet>
+    <worksheet name='Count plot'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontsize='14'>Countplot showing total number of people from each BMI Category in the dataset.</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Processed_Data' name='federated.1o942c30tei52i1gjoirs0kswial' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1o942c30tei52i1gjoirs0kswial'>
+            <column datatype='real' name='[BMI]' role='measure' type='quantitative' />
+            <column caption='BMI Category' datatype='string' name='[BMI_Category]' role='dimension' type='nominal' />
+            <column datatype='integer' name='[F1]' role='measure' type='quantitative' />
+            <column-instance column='[F1]' derivation='Count' name='[cnt:F1:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[BMI]' derivation='None' name='[none:BMI:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[BMI_Category]' derivation='None' name='[none:BMI_Category:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <manual-sort column='[federated.1o942c30tei52i1gjoirs0kswial].[none:BMI_Category:nk]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;Underweight&quot;</bucket>
+              <bucket>&quot;Normal&quot;</bucket>
+              <bucket>&quot;Overweight&quot;</bucket>
+              <bucket>&quot;Obese&quot;</bucket>
+            </dictionary>
+          </manual-sort>
+          <slices>
+            <column>[federated.1o942c30tei52i1gjoirs0kswial].[none:BMI:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.1o942c30tei52i1gjoirs0kswial].[cnt:F1:qk]' scope='rows' value='Count of people' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='width' field='[federated.1o942c30tei52i1gjoirs0kswial].[none:BMI_Category:nk]' value='156' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1o942c30tei52i1gjoirs0kswial].[none:BMI_Category:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='pane'>
+                <format attr='minheight' value='543' />
+                <format attr='maxheight' value='543' />
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+                <format attr='aspect' value='0' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1o942c30tei52i1gjoirs0kswial].[cnt:F1:qk]</rows>
+        <cols>[federated.1o942c30tei52i1gjoirs0kswial].[none:BMI_Category:nk]</cols>
+      </table>
+      <simple-id uuid='{D14F9770-EBC0-4787-AA01-56F7C1F980D5}' />
+    </worksheet>
+    <worksheet name='Scatterplot'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontsize='12'>Scatterplot showing BMI vs annual Medical costs of US citizens.</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Processed_Data' name='federated.1o942c30tei52i1gjoirs0kswial' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1o942c30tei52i1gjoirs0kswial'>
+            <column datatype='real' name='[BMI]' role='measure' type='quantitative' />
+            <column caption='BMI Category' datatype='string' name='[BMI_Category]' role='dimension' type='nominal' />
+            <column caption='MedicalCosts USD' datatype='real' name='[MedicalCosts_USD]' role='measure' type='quantitative' />
+            <column-instance column='[BMI]' derivation='None' name='[none:BMI:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[BMI_Category]' derivation='None' name='[none:BMI_Category:nk]' pivot='key' type='nominal' />
+            <column-instance column='[BMI]' derivation='Sum' name='[sum:BMI:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[MedicalCosts_USD]' derivation='Sum' name='[sum:MedicalCosts_USD:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <slices>
+            <column>[federated.1o942c30tei52i1gjoirs0kswial].[none:BMI:qk]</column>
+          </slices>
+          <aggregation value='false' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.1o942c30tei52i1gjoirs0kswial].[sum:MedicalCosts_USD:qk]' scope='rows' value='Annual Medical Spending (USD)' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1o942c30tei52i1gjoirs0kswial].[none:BMI_Category:nk]' />
+            </encodings>
+            <trendline enable-confidence-bands='false' enable-instant-analytics='true' enabled='true' exclude-color='false' exclude-intercept='false' fit='linear'>
+              <excluded-factors>
+                <column>[federated.1o942c30tei52i1gjoirs0kswial].[none:BMI_Category:nk]</column>
+              </excluded-factors>
+            </trendline>
+            <style>
+              <style-rule element='mark'>
+                <format attr='shape' value=':filled/circle' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='909' />
+                <format attr='maxwidth' value='909' />
+                <format attr='minheight' value='540' />
+                <format attr='maxheight' value='540' />
+                <format attr='aspect' value='0' />
+                <format attr='minwidth' value='909' />
+                <format attr='maxwidth' value='909' />
+                <format attr='minheight' value='540' />
+                <format attr='maxheight' value='540' />
+                <format attr='aspect' value='0' />
+                <format attr='minwidth' value='909' />
+                <format attr='maxwidth' value='909' />
+                <format attr='minheight' value='540' />
+                <format attr='maxheight' value='540' />
+                <format attr='aspect' value='0' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1o942c30tei52i1gjoirs0kswial].[sum:MedicalCosts_USD:qk]</rows>
+        <cols>[federated.1o942c30tei52i1gjoirs0kswial].[sum:BMI:qk]</cols>
+      </table>
+      <simple-id uuid='{6CC40313-C020-4C86-B68C-9AFF870293B2}' />
+    </worksheet>
+    <worksheet name='Simpler Boxplots'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontsize='12'>Boxplot Showing Mean Medical Expenses.</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Processed_Data' name='federated.1o942c30tei52i1gjoirs0kswial' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1o942c30tei52i1gjoirs0kswial'>
+            <column datatype='real' name='[BMI]' role='measure' type='quantitative' />
+            <column caption='BMI Category' datatype='string' name='[BMI_Category]' role='dimension' type='nominal' />
+            <column caption='MedicalCosts USD' datatype='real' name='[MedicalCosts_USD]' role='measure' type='quantitative' />
+            <column-instance column='[MedicalCosts_USD]' derivation='Avg' name='[avg:MedicalCosts_USD:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[BMI]' derivation='None' name='[none:BMI:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[BMI_Category]' derivation='None' name='[none:BMI_Category:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <manual-sort column='[federated.1o942c30tei52i1gjoirs0kswial].[none:BMI_Category:nk]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;Underweight&quot;</bucket>
+              <bucket>&quot;Normal&quot;</bucket>
+              <bucket>&quot;Overweight&quot;</bucket>
+              <bucket>&quot;Obese&quot;</bucket>
+            </dictionary>
+          </manual-sort>
+          <slices>
+            <column>[federated.1o942c30tei52i1gjoirs0kswial].[none:BMI:qk]</column>
+          </slices>
+          <aggregation value='false' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.1o942c30tei52i1gjoirs0kswial].[avg:MedicalCosts_USD:qk]' scope='rows' value='Annual Medical Spending (USD)' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='width' field='[federated.1o942c30tei52i1gjoirs0kswial].[none:BMI_Category:nk]' value='203' />
+          </style-rule>
+          <style-rule element='refboxplot'>
+            <format attr='fill-color' id='refline0' value='#f0f0f0d9' />
+            <format attr='palette' id='refline0' value='bp_green' />
+            <format attr='opacity' id='refline0' value='244' />
+            <format attr='boxplot-style' id='refline0' value='modern' />
+            <format attr='fill-color' id='refline1' value='#f0f0f0d9' />
+            <format attr='palette' id='refline1' value='bp_green' />
+            <format attr='opacity' id='refline1' value='244' />
+            <format attr='boxplot-style' id='refline1' value='modern' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.1o942c30tei52i1gjoirs0kswial].[none:BMI_Category:nk]' />
+            </encodings>
+            <reference-line axis-column='[federated.1o942c30tei52i1gjoirs0kswial].[avg:MedicalCosts_USD:qk]' boxplot-mark-exclusion='false' boxplot-whisker-type='standard' enable-instant-analytics='true' formula='average' id='refline0' label-type='automatic' probability='95' scope='per-cell' symmetric='false' value-column='[federated.1o942c30tei52i1gjoirs0kswial].[avg:MedicalCosts_USD:qk]' z-order='1' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='0.11994475126266479' />
+                <format attr='shape' value=':filled/circle' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1o942c30tei52i1gjoirs0kswial].[avg:MedicalCosts_USD:qk]</rows>
+        <cols>[federated.1o942c30tei52i1gjoirs0kswial].[none:BMI_Category:nk]</cols>
+      </table>
+      <simple-id uuid='{BC959E20-A9CD-4207-A33B-13FB7AAA622A}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard name='Dashboard 1'>
+      <style />
+      <size sizing-mode='automatic' />
+      <datasources>
+        <datasource caption='Processed_Data' name='federated.1o942c30tei52i1gjoirs0kswial' />
+      </datasources>
+      <datasource-dependencies datasource='federated.1o942c30tei52i1gjoirs0kswial'>
+        <column datatype='real' name='[BMI]' role='measure' type='quantitative' />
+        <column caption='BMI Category' datatype='string' name='[BMI_Category]' role='dimension' type='nominal' />
+        <column-instance column='[BMI]' derivation='None' name='[none:BMI:qk]' pivot='key' type='quantitative' />
+        <column-instance column='[BMI_Category]' derivation='None' name='[none:BMI_Category:nk]' pivot='key' type='nominal' />
+      </datasource-dependencies>
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='88427' id='8' param='horz' type-v2='layout-flow' w='98698' x='651' y='10463'>
+            <zone h='88427' id='6' type-v2='layout-basic' w='98698' x='651' y='10463'>
+              <zone h='44213' id='3' name='Boxplot' w='49349' x='651' y='10463'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='44214' id='12' name='Scatterplot' w='98698' x='651' y='54676'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='44213' id='18' name='Barplot' w='49349' x='50000' y='10463'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+          </zone>
+          <zone h='9353' id='11' param='horz' type-v2='layout-flow' w='98698' x='651' y='1110'>
+            <zone h='9353' id='10' mode='dropdown' name='Boxplot' param='[federated.1o942c30tei52i1gjoirs0kswial].[none:BMI_Category:nk]' type-v2='filter' values='database' w='13670' x='651' y='1110'>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='4' />
+              </zone-style>
+            </zone>
+            <zone fixed-size='299' h='9353' id='13' is-fixed='true' name='Scatterplot' pane-specification-id='2' param='[federated.1o942c30tei52i1gjoirs0kswial].[none:BMI_Category:nk]' type-v2='color' w='24980' x='14321' y='1110'>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='4' />
+              </zone-style>
+            </zone>
+            <zone h='9353' id='21' name='Scatterplot' param='[federated.1o942c30tei52i1gjoirs0kswial].[none:BMI:qk]' type-v2='filter' values='database' w='60048' x='39301' y='1110'>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='4' />
+              </zone-style>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='1100' minheight='1100' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='55' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='97780' id='54' param='vert' type-v2='layout-flow' w='98698' x='651' y='1110'>
+                <zone h='9353' id='10' mode='dropdown' name='Boxplot' param='[federated.1o942c30tei52i1gjoirs0kswial].[none:BMI_Category:nk]' type-v2='filter' values='database' w='13670' x='651' y='1110'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='44213' id='3' is-fixed='true' name='Boxplot' w='49349' x='651' y='10463'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='44213' id='18' is-fixed='true' name='Barplot' w='49349' x='50000' y='10463'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='9353' id='21' name='Scatterplot' param='[federated.1o942c30tei52i1gjoirs0kswial].[none:BMI:qk]' type-v2='filter' values='database' w='60048' x='39301' y='1110'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='44214' id='12' is-fixed='true' name='Scatterplot' w='98698' x='651' y='54676'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='299' h='9353' id='13' name='Scatterplot' pane-specification-id='2' param='[federated.1o942c30tei52i1gjoirs0kswial].[none:BMI_Category:nk]' type-v2='color' w='24980' x='14321' y='1110'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{873AE2B3-AF2C-44E7-A5D0-D0FA715D9B5F}' />
+    </dashboard>
+  </dashboards>
+  <windows source-height='30'>
+    <window class='worksheet' name='Boxplot'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='1' param='[federated.1o942c30tei52i1gjoirs0kswial].[none:BMI_Category:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{3EBD1887-26DC-4DAB-BEF6-8F23A79785A7}' />
+    </window>
+    <window class='worksheet' name='Count plot'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1o942c30tei52i1gjoirs0kswial].[none:BMI_Category:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{F58C1764-7F9A-4553-9A03-37DCDEEE89BF}' />
+    </window>
+    <window class='worksheet' name='Simpler Boxplots'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='1' param='[federated.1o942c30tei52i1gjoirs0kswial].[none:BMI_Category:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{255BE1C3-55BC-4EAB-BD81-33102FE88C36}' />
+    </window>
+    <window class='worksheet' name='Scatterplot'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='2' param='[federated.1o942c30tei52i1gjoirs0kswial].[none:BMI_Category:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{686722D6-F7C1-42FB-813C-33DF416E8B55}' />
+    </window>
+    <window class='worksheet' maximized='true' name='Barplot'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='1' param='[federated.1o942c30tei52i1gjoirs0kswial].[none:BMI_Category:nk]&#10;[federated.1o942c30tei52i1gjoirs0kswial].[:Measure Names]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{BEC05CA6-12AB-49A8-8027-A9C6A2C7E86D}' />
+    </window>
+    <window class='dashboard' name='Dashboard 1'>
+      <viewpoints>
+        <viewpoint name='Barplot'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Boxplot'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Scatterplot'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='-1' />
+      <simple-id uuid='{7F8F2685-0104-4736-9F06-953795215B67}' />
+    </window>
+  </windows>
+</workbook>

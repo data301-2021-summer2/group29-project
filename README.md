@@ -4,7 +4,7 @@
 
 -  **July 14** - Updated Readme for the dataset, and downloaded data into the repository.
 -  **July 15** - Updated Readme for task 3 and edited some spelling and grammatical errors.
- 
+
 
 
 
@@ -12,12 +12,12 @@
 
 This is a medical cost dataset of individuals in the United States as billed by various health insurance companies. Through this project, we wish to study the effect of the independent variables on the medical costs incurred by insurance service providers as well as the interplay between these seemingly distinct variables. 
 Some questions that we are particularly interested in exploring are:
-- Does having a high BMI result in incurring more medical charges in the United States?
+- Does having a high BMI result in incurring more medical charges in the United States? *Edit*: After performing my EDA, it was found 
 -	Do geographical regions play a part in increased medical costs? *Edit*: After performing my EDA, I was also interested in assessing the relationship between a person who smokes and their medical cost. Would a smoker incur higher medical costs?
 
 A useful outcome of this project could be to explore the results of controllable variables in reducing the total medical costs. For instance, not smoking and reducing one’s BMI may reduce the annual medical costs. In today’s world, the medical costs are quite high so any action we could take to reduce them would be incredibly helpful.
 I believe we could try to make a user-facing dashboard since they make it easier for users to read and understand the data.
-  
+
 
 ## Describe your dataset in about 150-200 words
 

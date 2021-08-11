@@ -77,7 +77,7 @@ Now we will explore some decriptive statistics on our dataSet.
 dataSet.describe().round(0).rename({'50%':'Median'}).drop(columns='Smoker_bin').T
 ```
 
-![Stats1](Prabhmeets_images/Stats1.png)
+![Stats1](../images/Stats1.png)
 
 
 
@@ -88,7 +88,7 @@ The following code gives us some statistical data to explore the previous found 
 ```
 dataSet.groupby('BMI_Category').agg(['mean','std','median','min','max']).round(1).drop(columns={'BMI'})
 ```
-![Stats2](Prabhmeets_images/Stats2.png)
+![Stats2](../images/Stats2.png)
 
 The following code was used to explore the percentage of US Population that is under the Obese Category. During my Exploratory analysis i got an intuition, that a good amount of American citizens have higher BMI than normal , that is they have BMI more the an 24.9 which is considered unhealthy.
 
@@ -109,7 +109,7 @@ sns.kdeplot(
 )
 
 ```
-![Plot1](Prabhmeets_images/plot1.png)
+![Plot1](../images/plot1.png)
 
 The following code will help us explore the relationship between BMI Category, and Medical Charges.
 ```python
@@ -173,7 +173,7 @@ plt.suptitle("Different plots comapring mean Medical Charges of American Citizen
 fig.show()
 
 ```
-![Plot2](Prabhmeets_images/plot2.png)
+![Plot2](../images/plot2.png)
 
 ```python
 fig, ax =plt.subplots(1,2,figsize=(15,5))
@@ -207,7 +207,7 @@ fig.show()
 
 ```
 
-![Plot3](Prabhmeets_images/plot3.png)
+![Plot3](../images/plot3.png)
 
 ```
 regplot = sns.regplot(
@@ -224,7 +224,7 @@ regplot.set(
 ```
 
 
-![Plot4](Prabhmeets_images/plot4.png)
+![Plot4](../images/plot4.png)
 
 ## EDA Concolusion
 
@@ -244,4 +244,3 @@ The above plots , and research was sourced from a different file , from my perso
 
 -  As per the data explored , having a BMI over 25 in America did not seem to be related with higher medical Expenses. Although it was also found that more than 50% of Americans are either Overweight or Obese as per [CDC guidelines](https://www.cdc.gov/healthyweight/assessing/index.html). Evidence was also found for being Obese or overweight and having higher Medical charges. This relation might just be due to the fact since, a good percentile of Americans are unhealthy in terms or their BMI, they also happened to be the ones with higher medical Charges. Meaning it might be just due to chance that the ones with higher medical charges also happened to be unhealthy in terms of their weight. To overcome this research barrier on having too many Individual from one group , we would have to randomly sample the dataset, and obtain equal number of subjects from each group , and then explore the mean medical spendings of the groups.
 -  A seperate analysis where the Medical Dataset was randomly sampled to have equal number of perople from each Bmi cateegory was also performed. Plots and data from that dataset can be found in my personal EDA file. In that file it was concluded that there was no linear relationship between a higher bmi, and higher Medical charged in American Citizens.
-
