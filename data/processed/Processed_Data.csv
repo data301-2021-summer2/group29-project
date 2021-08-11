@@ -1,7 +1,7 @@
 ,BMI,Smoker,Region,MedicalCosts_USD,Smoker_bin,BMI_Category
 0,27.9,yes,southwest,16884.924,1,Overweight
 1,33.77,no,southeast,1725.552,0,Obese
-2,33.0,no,southeast,4449.462,0,Obese
+2,33,no,southeast,4449.462,0,Obese
 3,22.7,no,northwest,21984.471,0,Normal
 4,28.88,no,northwest,3866.855,0,Overweight
 5,25.74,no,southeast,3756.622,0,Overweight
@@ -28,7 +28,7 @@
 26,23.08,no,northeast,14451.835,0,Normal
 27,32.78,no,northwest,12268.632,0,Obese
 28,17.39,no,northwest,2775.192,0,Underweight
-29,36.3,yes,southwest,38711.0,1,Obese
+29,36.3,yes,southwest,38711,1,Obese
 30,35.6,yes,southwest,35585.576,1,Obese
 31,26.32,no,northeast,2198.19,0,Overweight
 32,28.6,no,southwest,4687.797,0,Overweight
@@ -51,7 +51,7 @@
 49,35.2,yes,southeast,38709.176,1,Obese
 50,35.62,no,northeast,2211.131,0,Obese
 51,33.63,no,northwest,3579.829,0,Obese
-52,28.0,yes,southwest,23568.272,1,Overweight
+52,28,yes,southwest,23568.272,1,Overweight
 53,34.43,yes,southeast,37742.576,1,Obese
 54,28.69,no,northwest,8059.679,0,Overweight
 55,36.96,yes,northwest,47496.494,1,Obese
@@ -138,7 +138,7 @@
 136,34.1,no,southwest,1261.442,0,Obese
 137,25.18,no,northwest,2045.685,0,Overweight
 138,31.9,no,southeast,27322.734,0,Obese
-139,36.0,no,southwest,2166.732,0,Obese
+139,36,no,southwest,2166.732,0,Obese
 140,22.42,no,northeast,27375.905,0,Normal
 141,32.49,no,northeast,3490.549,0,Obese
 142,25.3,yes,southeast,18972.495,1,Overweight
@@ -165,7 +165,7 @@
 163,29.8,no,southwest,5152.134,0,Overweight
 164,29.64,no,northwest,5028.147,0,Overweight
 165,28.22,no,northeast,10407.086,0,Overweight
-166,37.0,no,southwest,4830.63,0,Obese
+166,37,no,southwest,4830.63,0,Obese
 167,33.16,no,northwest,6128.797,0,Obese
 168,31.82,no,northwest,2719.28,0,Obese
 169,18.9,no,northeast,4827.905,0,Normal
@@ -209,7 +209,7 @@
 207,27.74,yes,northeast,20984.094,1,Overweight
 208,31.8,no,southwest,13880.949,0,Obese
 209,41.23,no,northeast,6610.11,0,Obese
-210,33.0,no,southwest,1980.07,0,Obese
+210,33,no,southwest,1980.07,0,Obese
 211,30.88,no,northwest,8162.716,0,Obese
 212,28.5,no,northwest,3537.703,0,Overweight
 213,26.73,no,southeast,5002.783,0,Overweight
@@ -302,8 +302,8 @@
 300,27.55,no,northeast,6746.742,0,Overweight
 301,22.61,yes,northeast,24873.385,1,Normal
 302,37.51,no,southeast,12265.507,0,Obese
-303,33.0,no,southeast,4349.462,0,Obese
-304,38.0,no,southwest,12646.207,0,Obese
+303,33,no,southeast,4349.462,0,Obese
+304,38,no,southwest,12646.207,0,Obese
 305,33.34,no,northwest,19442.354,0,Obese
 306,27.5,no,southwest,20177.671,0,Overweight
 307,33.33,no,southeast,4151.029,0,Obese
@@ -345,7 +345,7 @@
 343,36.76,no,northeast,13981.85,0,Obese
 344,41.47,no,southeast,10977.206,0,Obese
 345,29.26,no,southeast,6184.299,0,Overweight
-346,35.75,no,southeast,4890.0,0,Obese
+346,35.75,no,southeast,4890,0,Obese
 347,33.34,no,northeast,8334.458,0,Obese
 348,29.92,no,southeast,5478.037,0,Overweight
 349,27.84,no,northwest,1635.734,0,Overweight
@@ -381,7 +381,7 @@
 379,31.46,no,southeast,27000.985,0,Obese
 380,17.95,yes,northeast,15006.579,1,Underweight
 381,30.68,yes,northeast,42303.692,1,Obese
-382,33.0,no,southeast,20781.489,0,Obese
+382,33,no,southeast,20781.489,0,Obese
 383,43.34,no,southeast,5846.918,0,Obese
 384,22.14,no,northeast,8302.536,0,Normal
 385,34.4,no,southwest,1261.859,0,Obese
@@ -445,7 +445,7 @@
 443,36.52,no,southeast,28287.898,0,Obese
 444,26.7,yes,northwest,26109.329,1,Overweight
 445,33.1,no,southwest,7345.084,0,Obese
-446,29.64,no,northeast,12731.0,0,Overweight
+446,29.64,no,northeast,12731,0,Overweight
 447,25.65,no,northwest,11454.022,0,Overweight
 448,29.6,no,southwest,5910.944,0,Overweight
 449,38.6,no,southwest,4762.329,0,Obese
@@ -454,13 +454,13 @@
 452,23.4,no,southwest,1969.614,0,Normal
 453,29.74,no,northwest,1769.532,0,Overweight
 454,46.53,no,southeast,4686.389,0,Obese
-455,37.4,no,southwest,21797.0,0,Obese
+455,37.4,no,southwest,21797,0,Obese
 456,30.14,no,southeast,11881.97,0,Obese
 457,30.5,no,northwest,11840.775,0,Obese
 458,39.6,no,southwest,10601.412,0,Obese
-459,33.0,no,southeast,7682.67,0,Obese
+459,33,no,southeast,7682.67,0,Obese
 460,36.63,no,southeast,10381.479,0,Obese
-461,30.0,yes,southwest,22144.032,1,Obese
+461,30,yes,southwest,22144.032,1,Obese
 462,38.1,no,northeast,15230.324,0,Obese
 463,25.94,no,northeast,11165.418,0,Overweight
 464,25.18,no,northwest,1632.036,0,Overweight
@@ -517,7 +517,7 @@
 515,35.7,no,southwest,11362.755,0,Obese
 516,35.31,no,southeast,27724.289,0,Obese
 517,30.5,no,northwest,8413.463,0,Obese
-518,31.0,no,southwest,5240.765,0,Obese
+518,31,no,southwest,5240.765,0,Obese
 519,30.88,no,northeast,3857.759,0,Obese
 520,27.36,no,northeast,25656.575,0,Overweight
 521,44.22,no,southeast,3994.178,0,Obese
@@ -539,7 +539,7 @@
 537,30.2,no,southwest,8825.086,0,Obese
 538,28.05,no,southeast,8233.098,0,Overweight
 539,31.35,no,southeast,27346.042,0,Obese
-540,38.0,no,southwest,6196.448,0,Obese
+540,38,no,southwest,6196.448,0,Obese
 541,31.79,no,southeast,3056.388,0,Obese
 542,36.3,no,southeast,13887.204,0,Obese
 543,47.41,yes,southeast,63770.428,1,Obese
@@ -575,7 +575,7 @@
 573,36.86,no,northeast,31620.001,0,Obese
 574,34.3,no,northeast,13224.057,0,Obese
 575,27.17,no,northwest,12222.898,0,Overweight
-576,26.84,no,southeast,1665.0,0,Overweight
+576,26.84,no,southeast,1665,0,Overweight
 577,38.1,yes,northeast,58571.074,1,Obese
 578,30.2,no,southwest,9724.53,0,Obese
 579,23.46,no,northeast,3206.491,0,Normal
@@ -588,7 +588,7 @@
 587,30.21,yes,northwest,43943.876,1,Obese
 588,35.91,no,northeast,13635.638,0,Obese
 589,30.69,no,southeast,5976.831,0,Obese
-590,29.0,no,southwest,11842.442,0,Overweight
+590,29,no,southwest,11842.442,0,Overweight
 591,19.57,no,northwest,8428.069,0,Normal
 592,31.13,no,southeast,2566.471,0,Obese
 593,21.85,yes,northeast,15359.104,1,Normal
@@ -611,8 +611,8 @@
 610,29.37,no,southeast,8547.691,0,Overweight
 611,34.8,no,southwest,6571.544,0,Obese
 612,33.16,no,northeast,2207.697,0,Obese
-613,19.0,no,northeast,6753.038,0,Normal
-614,33.0,no,southeast,1880.07,0,Obese
+613,19,no,northeast,6753.038,0,Normal
+614,33,no,southeast,1880.07,0,Obese
 615,36.63,yes,southeast,42969.853,1,Obese
 616,28.6,no,northeast,11658.115,0,Overweight
 617,25.6,yes,southwest,23306.547,1,Overweight
@@ -626,7 +626,7 @@
 625,26.03,no,northwest,3736.465,0,Overweight
 626,28.88,no,northeast,6748.591,0,Overweight
 627,42.46,no,southeast,11326.715,0,Obese
-628,38.0,no,southwest,11365.952,0,Obese
+628,38,no,southwest,11365.952,0,Obese
 629,38.95,yes,northwest,42983.458,1,Obese
 630,36.1,no,southwest,10085.846,0,Obese
 631,29.3,no,southwest,1977.815,0,Overweight
@@ -744,9 +744,9 @@
 743,26.62,no,southeast,3757.845,0,Overweight
 744,26.41,no,northwest,8827.21,0,Overweight
 745,30.12,no,northwest,9910.36,0,Obese
-746,27.0,no,southwest,11737.849,0,Overweight
+746,27,no,southwest,11737.849,0,Overweight
 747,21.76,no,northwest,1627.282,0,Normal
-748,36.0,no,southwest,8556.907,0,Obese
+748,36,no,southwest,8556.907,0,Obese
 749,30.88,no,northwest,3062.508,0,Obese
 750,26.4,yes,southeast,19539.243,1,Overweight
 751,28.98,no,northwest,1906.358,0,Overweight
@@ -765,7 +765,7 @@
 764,25.18,no,northeast,9095.068,0,Overweight
 765,31.82,no,northwest,11842.624,0,Obese
 766,32.3,no,southwest,8062.764,0,Obese
-767,29.0,no,southwest,7050.642,0,Overweight
+767,29,no,southwest,7050.642,0,Overweight
 768,39.7,no,southwest,14319.031,0,Obese
 769,19.48,no,northwest,6933.242,0,Normal
 770,36.1,no,southwest,27941.288,0,Obese
@@ -859,7 +859,7 @@
 858,32.23,no,southeast,18218.161,0,Obese
 859,28.1,no,southwest,10965.446,0,Overweight
 860,47.6,yes,southwest,46113.511,1,Obese
-861,28.0,no,southwest,7151.092,0,Overweight
+861,28,no,southwest,7151.092,0,Overweight
 862,33.53,no,northwest,12269.689,0,Obese
 863,19.86,no,northeast,5458.046,0,Normal
 864,25.4,no,southwest,8782.469,0,Overweight
@@ -893,7 +893,7 @@
 892,24.04,no,northeast,10422.917,0,Normal
 893,38.94,yes,southeast,44202.654,1,Obese
 894,32.11,no,northeast,13555.005,0,Obese
-895,44.0,no,southwest,13063.883,0,Obese
+895,44,no,southwest,13063.883,0,Obese
 896,20.05,yes,northeast,19798.055,1,Normal
 897,25.56,no,northwest,2221.564,0,Overweight
 898,40.26,no,southeast,1634.573,0,Obese
@@ -918,9 +918,9 @@
 917,22.9,yes,northeast,35069.375,1,Normal
 918,28.2,no,southwest,13041.921,0,Overweight
 919,34.21,no,southeast,5245.227,0,Obese
-920,25.0,no,southwest,13451.122,0,Overweight
+920,25,no,southwest,13451.122,0,Overweight
 921,33.2,no,southwest,13462.52,0,Obese
-922,31.0,no,southwest,5488.262,0,Obese
+922,31,no,southwest,5488.262,0,Obese
 923,35.82,no,northwest,4320.411,0,Obese
 924,23.2,no,southwest,6250.435,0,Normal
 925,32.11,no,northeast,25333.333,0,Obese
@@ -1018,7 +1018,7 @@
 1017,34.2,no,southwest,3987.926,0,Obese
 1018,35.82,no,northwest,12495.291,0,Obese
 1019,32.68,no,northwest,26018.951,0,Obese
-1020,37.0,no,southwest,8798.593,0,Obese
+1020,37,no,southwest,8798.593,0,Obese
 1021,31.02,yes,southeast,35595.59,1,Obese
 1022,36.08,yes,southeast,42211.138,1,Obese
 1023,23.32,no,southeast,1711.027,0,Normal
@@ -1033,7 +1033,7 @@
 1032,27.93,no,northeast,4137.523,0,Overweight
 1033,21.56,yes,northeast,13747.872,1,Normal
 1034,38.38,no,northwest,12950.071,0,Obese
-1035,23.0,no,southwest,12094.478,0,Normal
+1035,23,no,southwest,12094.478,0,Normal
 1036,37.07,yes,southeast,37484.449,1,Obese
 1037,30.5,yes,northwest,39725.518,1,Obese
 1038,28.88,no,northeast,2250.835,0,Overweight
@@ -1074,7 +1074,7 @@
 1073,28.88,no,northeast,12096.651,0,Overweight
 1074,18.34,no,northeast,13204.286,0,Underweight
 1075,29.59,no,southeast,4562.842,0,Overweight
-1076,32.0,no,southwest,8551.347,0,Obese
+1076,32,no,southwest,8551.347,0,Obese
 1077,26.03,no,northeast,2102.265,0,Overweight
 1078,31.68,yes,southeast,34672.147,1,Obese
 1079,33.66,no,southeast,15161.534,0,Obese
@@ -1106,7 +1106,7 @@
 1105,31.24,no,southeast,10338.932,0,Obese
 1106,29.92,no,northwest,8988.159,0,Overweight
 1107,26.22,no,northwest,10493.946,0,Overweight
-1108,30.0,no,southwest,2904.088,0,Obese
+1108,30,no,southwest,2904.088,0,Obese
 1109,20.35,no,southeast,8605.362,0,Normal
 1110,32.3,no,northeast,11512.405,0,Obese
 1111,38.39,yes,southeast,41949.244,1,Obese
@@ -1134,7 +1134,7 @@
 1133,18.34,no,northwest,9991.038,0,Underweight
 1134,33.82,no,northwest,19673.336,0,Obese
 1135,28.12,no,northwest,11085.587,0,Overweight
-1136,25.0,no,southwest,7623.518,0,Overweight
+1136,25,no,southwest,7623.518,0,Overweight
 1137,22.23,no,northwest,3176.288,0,Normal
 1138,30.25,no,southeast,3704.354,0,Obese
 1139,32.49,yes,northwest,36898.733,1,Obese
@@ -1187,7 +1187,7 @@
 1186,35.62,yes,northwest,37465.344,1,Obese
 1187,32.68,no,northwest,13844.797,0,Obese
 1188,25.27,yes,northeast,21771.342,1,Overweight
-1189,28.0,no,southwest,13126.677,0,Overweight
+1189,28,no,southwest,13126.677,0,Overweight
 1190,32.78,no,northwest,5327.4,0,Obese
 1191,21.76,no,northeast,13725.472,0,Normal
 1192,32.4,no,northeast,13019.161,0,Obese
@@ -1293,7 +1293,7 @@
 1292,23.21,no,southeast,1515.345,0,Normal
 1293,25.74,no,northwest,9301.894,0,Overweight
 1294,25.18,no,northeast,11931.125,0,Overweight
-1295,22.0,no,southwest,1964.78,0,Normal
+1295,22,no,southwest,1964.78,0,Normal
 1296,26.12,no,northeast,1708.926,0,Overweight
 1297,26.51,no,southeast,4340.441,0,Overweight
 1298,27.46,no,northwest,5261.469,0,Overweight
