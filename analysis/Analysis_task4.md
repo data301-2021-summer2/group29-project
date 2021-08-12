@@ -98,7 +98,7 @@ Now we will explore some decriptive statistics on our dataSet.
 dataSet.describe().round(0).rename({'50%':'Median'}).drop(columns='Smoker_bin').T
 ```
 
-![Stats1](../images/Stats1.png)
+<img src="../images/Stats1.png" alt="Stats1" style="zoom:150%;" />
 
 
 
@@ -109,7 +109,7 @@ The following code gives us some statistical data to explore the previous found 
 ```
 dataSet.groupby('BMI_Category').agg(['mean','std','median','min','max']).round(1).drop(columns={'BMI'})
 ```
-![Stats2](../images/Stats2.png)
+<img src="../images/Stats2.png" alt="Stats2" style="zoom:150%;" />
 
 **Conclusion** : The mean Medical charge for the Obese group is found to be the highest. Although the difference between Normal and Overweight (mean Medical Charges) does not seem to be much. Moreover from the previous statistical table , it was found that the median BMI for american citizens was 30 , thus telling us that our research might be biased , since our sample data set does not have equal proportions of BMI categories. 
 
@@ -134,7 +134,7 @@ sns.kdeplot(
 )
 
 ```
-![Plot1](../images/plot1.png)
+<img src="../images/plot1.png" alt="Plot1" style="zoom:150%;" />
 
 The following code will help us explore the relationship between BMI Category, and Medical Charges.
 ```python
@@ -198,7 +198,9 @@ plt.suptitle("Different plots comapring mean Medical Charges of American Citizen
 fig.show()
 
 ```
-![Plot2](../images/plot2.png)
+<img src="../images/plot2.png" alt="Plot2" style="zoom: 200%;" />
+
+
 
 ```python
 fig, ax =plt.subplots(1,2,figsize=(15,5))
