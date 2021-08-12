@@ -3,7 +3,7 @@ import numpy as np
 import matplotlib as plt
 import seaborn as sns
 
-def load_and_process(dataSet):
+def load_and_process():
     ## This will load up , and clean up the data.
     
     df_processed = (

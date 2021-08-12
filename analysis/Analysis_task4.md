@@ -41,7 +41,20 @@ Upon analyzing and visualizing the data, we can reach the following conclusions:
 ## Prabhmeet's Analysis:
 First we will import pandas, and use it to read the dataset. As well as do some method cleaning, and some data Wrangling. All of that has been Chained together, in this chunk , below for the purpose of ease to read , and debug.
 
-Also a function was built , that used method chanining to clean , process, and wrangle the data, and act as a pipeline. In this section we use that function to load in our data. The function was placed inside the scripts folder 
+Also a function was built , that used method chanining to clean , process, and wrangle the data, and act as a pipeline. In this section we use that function to load in our data. The function was placed inside the scripts folder.
+
+Also a judgement call was made to not exclude outliers from this research , as it is totally feasible for medical bills in America to be extremely high in certain situtations. If more information would have been present regarding for which reason the expense was high, such as not at fault accident, or for having a disease that has one in a million chance of occuring, then based on similar paramters the outliers could have been removed.
+
+Also the bmi's were categorized into categories using the following table , as per [CDC guidelines](https://www.cdc.gov/healthyweight/assessing/index.html).
+
+| Bmi (range)    | Bmi Catgory |
+| -------------- | ----------- |
+| < 18.50        | Underweight |
+| 18.50 to 24.99 | Normal      |
+| 25.00 to 29.99 | Overweight  |
+| > 30.0         | Obeser      |
+
+
 
 ```python
 import pandas as pd
@@ -57,6 +70,14 @@ from scripts import project_functions as fun
 The autoreload extension is already loaded. To reload it, use:
   %reload_ext autoreload
 ```
+Now we will simply import the dataSet.
+
+```python
+# This part processes the data without any method chaining.
+dataSet= fun.load_and_process()
+dataSet
+```
+
 Now we will use a pandas profiling library to get a brief overiview of our data , and look over some of the plots of our dataset.
 
 ```python
@@ -83,12 +104,16 @@ dataSet.describe().round(0).rename({'50%':'Median'}).drop(columns='Smoker_bin').
 
 The following code gives us some statistical data to explore the previous found co-relation in my EDA. 
 
-**Conclusion** : The mean Medical charge for the Obese group is found to be the highest. Although the difference between Normal and Overweight (mean Medical Charges) does not seem to be much.
+
 
 ```
 dataSet.groupby('BMI_Category').agg(['mean','std','median','min','max']).round(1).drop(columns={'BMI'})
 ```
 ![Stats2](../images/Stats2.png)
+
+**Conclusion** : The mean Medical charge for the Obese group is found to be the highest. Although the difference between Normal and Overweight (mean Medical Charges) does not seem to be much. Moreover from the previous statistical table , it was found that the median BMI for american citizens was 30 , thus telling us that our research might be biased , since our sample data set does not have equal proportions of BMI categories. 
+
+### Using plots to Explore , and present findings.
 
 The following code was used to explore the percentage of US Population that is under the Obese Category. During my Exploratory analysis i got an intuition, that a good amount of American citizens have higher BMI than normal , that is they have BMI more the an 24.9 which is considered unhealthy.
 
@@ -242,5 +267,10 @@ The above plots , and research was sourced from a different file , from my perso
 
 ## Research Conclusion.
 
--  As per the data explored , having a BMI over 25 in America did not seem to be related with higher medical Expenses. Although it was also found that more than 50% of Americans are either Overweight or Obese as per [CDC guidelines](https://www.cdc.gov/healthyweight/assessing/index.html). Evidence was also found for being Obese or overweight and having higher Medical charges. This relation might just be due to the fact since, a good percentile of Americans are unhealthy in terms or their BMI, they also happened to be the ones with higher medical Charges. Meaning it might be just due to chance that the ones with higher medical charges also happened to be unhealthy in terms of their weight. To overcome this research barrier on having too many Individual from one group , we would have to randomly sample the dataset, and obtain equal number of subjects from each group , and then explore the mean medical spendings of the groups.
--  A seperate analysis where the Medical Dataset was randomly sampled to have equal number of perople from each Bmi cateegory was also performed. Plots and data from that dataset can be found in my personal EDA file. In that file it was concluded that there was no linear relationship between a higher bmi, and higher Medical charged in American Citizens.
+As per the data explored , having a BMI over 25 in America did not seem to be related with higher medical Expenses. Although it was also found that more than 50% of Americans are either Overweight or Obese as per [CDC guidelines](https://www.cdc.gov/healthyweight/assessing/index.html). Evidence was also found for being Obese or overweight and having higher Medical charges. This relation might just be due to the fact since, a good percentile of Americans are unhealthy in terms or their BMI, they also happened to be the ones with higher medical Charges. Meaning it might be just due to chance that the ones with higher medical charges also happened to be unhealthy in terms of their weight. To overcome this research barrier on having too many Individual from one group , we would have to randomly sample the dataset, and obtain equal number of subjects from each group , and then explore the mean medical spendings of the groups. Even though the above table does show a linear relation , it is not strong enough to conclude our findings, as the p value (regression analysis of Scatter plot from tableau dashboard) is not significant enough.
+
+​		A seperate analysis where the Medical Dataset was randomly sampled to have equal number of perople from each Bmi cateegory was also performed. Plots and data from that dataset can be found in my personal EDA file. In that file it was concluded that there was no linear relationship between a higher bmi, and higher Medical charged in American Citizens.
+
+​		Although i  was not able to confirm that i was able to sample the random sample correctly, as in i performed the right statistical technique to obtain the random sample. Thus no conclusion about the random Sample were made in my Final Analysis. Moreover I did present a Tableau dashboard of the dataSet in my own Analysis Folder.
+
+​		Anyone who wants to explore my findings even more , can find a way to correctly randomly sample from my initial data set , and then produce boxplots, violin plots , and regression plots too see if they can find any evidence of a Higher bmi resulting in higher medical expenses in the US.
