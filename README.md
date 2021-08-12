@@ -7,8 +7,11 @@ Individual EDA's for Milestone 2 can be found [here](https://github.com/data301-
 
 Dashboard for Milestone 4 can be found [here](https://github.com/data301-2021-summer2/group29-project/blob/main/presentation/FinalDashboard.twbx).
 
-[Link](https://www.youtube.com/watch?v=VIeNYzg3JXM) to the presentation video for the dashboard.
+- [Link](https://www.youtube.com/watch?v=VIeNYzg3JXM) to the presentation video for the dashboard.
 
+All of the work done for Milestone 4 can be found in the `presentation` directory.
+
+**Timeline of few of the steps performed in this project:**
 -  July 14 - Updated Readme for the dataset, and downloaded data into the repository.
 
 -  July 15 - Updated Readme for task 3 and edited some spelling and grammatical errors.
